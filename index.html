@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Converting Peso</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";; rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+	* { margin: 0;
+		padding: 0;
+		box-sizing: border-box;}
+div{
+	margin: auto;
+	width: 50%;
+	border: 2px solid green;
+	padding:10px;
+	text-align: center;}
+
+body { background-color: #ccd5ae; }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<script>
+let peso = 100; //given value in peso
+let dollar = 58.82; //for dollar
+let euro = 59.90; //for euro
+
+document.write("<h1> Click the buttons below to convert Peso </h1>" + "<kbd>" + 100 + "</kbd>" + "<h2> Peso conversion </h2>");
+</script>
+
+<p id="display"> </p>
+
+<br>
+<button type="button" class="btn btn-success"
+onclick="document.getElementById('display').innerHTML='<kbd>' + 100/58.82 + '</kbd>' + 'dollar';"> Dollar
+</button>
+
+<button type="button" class="btn btn-success"
+onclick="document.getElementById('display').innerHTML='<kbd>' + 100/59.90+ '</kbd>' + 'euro';"> Euro
+</button>
+
+<a href="index.html"><button class="btn btn-light">Refresh</button></a>
+
+
+</div>
+
+
+</body>
+</html>
